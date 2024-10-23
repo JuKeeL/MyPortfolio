@@ -16,6 +16,7 @@ body{
 img{
     width: 40px;
     height: 40px;
+    filter: invert();
 }
 .tête{
     transform: translate(0, 300px);
@@ -47,7 +48,7 @@ h4{
 }
 .photo{
     display: flex ;
-    transform: translate(520px);
+    justify-content: center;
     transition: transform 0.3s ease;
 }
 
