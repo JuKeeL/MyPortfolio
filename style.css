@@ -4,24 +4,57 @@
     box-sizing: border-box;
 }    
 body{
-    
+    background-image: url(./img/fond-gif.gif);
     text-align: center;
-    color: gray;
+    color: rgb(243, 40, 25);
     justify-content: center;
-    
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh;
 }
 img{
-    width: 50px;
-    height: 50px;
-
+    width: 40px;
+    height: 40px;
 }
 .tête{
     transform: translate(0, 300px);
-    
 }
-h1{
-    
+.wave{
+    font-size: 100px;
+   text-decoration: wavy;
+   font-weight: bold;
+   display: inline-block;
+   animation: wave 1s infinite;
+
 }
-button{
-    
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+h4{
+
+}
+.photo{
+    display: flex ;
+    transform: translate(520px);
+    transition: transform 0.3s ease;
+}
+
+.i1{
+    margin: 10px;
+}
+
+.i1:hover{
+    transform: scale(1.1);
 }
